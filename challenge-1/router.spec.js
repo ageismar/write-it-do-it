@@ -56,8 +56,8 @@ describe('Challenge 1 - Express route', () => {
       const dogFromDb = await agent.get(`/api/dogs/${response.body.data.id}`);
 
       // your expect assertion here...
-      expect(dogFromDb.name).to.equal('Cody'); // if body is an object
-      expect(dogFromDb.age).to.equal(5); // if body is an object
+      expect(dogFromDb.name).to.equal(response.body.name); // if body is an object
+      expect(dogFromDb.age).to.equal(response.body.age); // if body is an object
     });
   });
 });
