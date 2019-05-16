@@ -8,7 +8,7 @@ const chaiThings = require('chai-things');
 chai.use(chaiThings);
 
 // Model
-const {Dog} = require('../app/server/models');
+const { Dog } = require('../app/server/models');
 
 // Routes
 const app = require('../app/server/app');
